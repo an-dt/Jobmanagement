@@ -19,7 +19,7 @@ public class Job {
     @Column(name = "jobId")
     private String jobId;
 
-    @Column(name = "jobstatus") // Ánh xạ tên cột với annotation @Column
+    @Column(name = "jobstatus") // Ánh xạ tên cột với annot ation @Column
     private String jobStatus;
 
     @Column(name = "triggervalue")

@@ -31,6 +31,7 @@ public class JobService implements JobServiceimp {
             jobdto.setStatusEnum(job.getStatusEnum());
             jobdto.setLastUpdate(job.getLastUpdate());
             jobdto.setTriggerDesc(job.getTriggerDesc());
+            jobdto.setJobGroup(job.getJobGroup() != null ? jobdto.getJobGroup() : "N/A");
             jobdtoList.add(jobdto);
             System.out.println(job.getJobStatus());
         }

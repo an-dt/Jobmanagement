@@ -20,6 +20,8 @@ public class Jobdto {
 
     private String triggerDesc;
 
+    private String jobGroup;
+
     private Date startTime;
 
     private Date endTime;
