@@ -8,6 +8,7 @@ import lombok.Setter;
 @Setter
 public class JobStatusUpdateRequest {
     private String jobId;
+    private String jobGroup;
     private String jobStatus;
     private String statusEnum;
 }

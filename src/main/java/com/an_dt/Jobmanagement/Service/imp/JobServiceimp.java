@@ -7,5 +7,6 @@ import java.util.List;
 
 public interface JobServiceimp {
     List<Jobdto> getAllJobs();
-    void updateJobStatus(String jobId, String jobStatus, String statusEnum);
+    void updateJobStatus(String jobId,String jobGroup , String jobStatus, String statusEnum);
+    void stopJob(String jobId );
 }

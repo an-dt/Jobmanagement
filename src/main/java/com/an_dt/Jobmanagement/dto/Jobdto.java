@@ -26,6 +26,8 @@ public class Jobdto {
 
     private Date endTime;
 
+    private String jobId;
+
     private Timestamp lastUpdate;
 
     private String errorMessage;
