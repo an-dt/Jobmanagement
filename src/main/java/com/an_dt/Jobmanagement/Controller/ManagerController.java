@@ -21,4 +21,5 @@ public class ManagerController {
        return new ResponseEntity<>(jobServiceimp.getAllJobs(), HttpStatus.OK);
     }
 
+
 }
