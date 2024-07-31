@@ -39,7 +39,7 @@ public class JobService implements JobServiceimp {
             jobdto.setLastUpdate(job.getLastUpdate());
             jobdto.setTriggerDesc(job.getTriggerDesc());
             jobdto.setJobId(job.getJobId());
-            jobdto.setJobGroup(job.getJobGroup() != null ? job.getJobGroup().getName() : "N/A");  // Thêm giá trị jobGroup
+            jobdto.setJobGroup(job.getJobGroup() != null ? job.getJobGroup().getName() : "N/A");
             jobdtoList.add(jobdto);
             System.out.println(job.getJobStatus());
         }
@@ -63,7 +63,7 @@ public class JobService implements JobServiceimp {
         try {
             Job job = jobRepository.findByJobId(jobId);
             if (job != null) {
-            job.setJobStatus("Stopping");
+            job.setJobStatus("Stop");
             job.setStatusEnum("Job Stop");
             job.setLastUpdate(Timestamp.valueOf(LocalDateTime.now()));
             jobRepository.save(job);
